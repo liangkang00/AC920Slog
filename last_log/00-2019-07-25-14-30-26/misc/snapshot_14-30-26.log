@@ -1,0 +1,533 @@
+
+============ meminfo  19-07-25 14:30:26  ==============
+MemTotal:         437620 kB
+MemFree:          387552 kB
+MemAvailable:     394152 kB
+Buffers:            1328 kB
+Cached:            13616 kB
+SwapCached:            0 kB
+Active:            11872 kB
+Inactive:           9876 kB
+Active(anon):       6916 kB
+Inactive(anon):       76 kB
+Active(file):       4956 kB
+Inactive(file):     9800 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:          6952 kB
+Mapped:             6172 kB
+Shmem:               144 kB
+Slab:              10936 kB
+SReclaimable:       3496 kB
+SUnreclaim:         7440 kB
+KernelStack:        1552 kB
+PageTables:          840 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      218808 kB
+Committed_AS:      16176 kB
+VmallocTotal:     516096 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+DetourTotal:          16128 kB
+DetourFree:           16128 kB
+
+============ binder_state  19-07-25 14:30:26  ==============
+binder state:
+proc 225
+context binder
+  thread 225: l 12 need_return 0 tr 0
+  node 7: u00000000803d6320 c00000000803d62fc pri 0:247 hs 1 hw 1 ls 0 lw 0 is 1 iw 1 tr 1 proc 209
+  ref 5: desc 0 node 2 s 1 w 1 d 00000000
+proc 209
+context binder
+  thread 209: l 12 need_return 0 tr 0
+  node 2: u0000000000000000 c0000000000000000 pri 0:120 hs 1 hw 1 ls 1 lw 1 is 1 iw 1 tr 1 proc 225
+  ref 8: desc 1 node 7 s 1 w 0 d 00000000
+proc 208
+context binder
+  thread 208: l 02 need_return 0 tr 0
+
+============ binder_stats  19-07-25 14:30:26  ==============
+binder stats:
+BC_TRANSACTION: 3
+BC_REPLY: 2
+BC_FREE_BUFFER: 4
+BC_INCREFS: 1
+BC_ACQUIRE: 2
+BC_INCREFS_DONE: 1
+BC_ACQUIRE_DONE: 1
+BC_ENTER_LOOPER: 3
+BC_REQUEST_DEATH_NOTIFICATION: 1
+BR_TRANSACTION: 2
+BR_REPLY: 2
+BR_TRANSACTION_COMPLETE: 5
+BR_INCREFS: 1
+BR_ACQUIRE: 1
+proc: active 3 total 3
+thread: active 3 total 3
+node: active 2 total 2
+ref: active 2 total 2
+death: active 1 total 1
+transaction: active 0 total 4
+transaction_complete: active 0 total 4
+proc 225
+context binder
+  threads: 1
+  requested threads: 0+0/15
+  ready threads 1
+  free async space 520192
+  nodes: 1
+  refs: 1 s 1 w 1
+  buffers: 0
+  pending transactions: 0
+  BC_TRANSACTION: 2
+  BC_FREE_BUFFER: 2
+  BC_INCREFS: 1
+  BC_ACQUIRE: 1
+  BC_INCREFS_DONE: 1
+  BC_ACQUIRE_DONE: 1
+  BC_ENTER_LOOPER: 1
+  BR_REPLY: 2
+  BR_TRANSACTION_COMPLETE: 2
+  BR_INCREFS: 1
+  BR_ACQUIRE: 1
+proc 209
+context binder
+  threads: 1
+  requested threads: 0+0/0
+  ready threads 1
+  free async space 65536
+  nodes: 1
+  refs: 1 s 1 w 0
+  buffers: 0
+  pending transactions: 0
+  BC_REPLY: 2
+  BC_FREE_BUFFER: 2
+  BC_ACQUIRE: 1
+  BC_ENTER_LOOPER: 1
+  BC_REQUEST_DEATH_NOTIFICATION: 1
+  BR_TRANSACTION: 2
+  BR_TRANSACTION_COMPLETE: 2
+proc 208
+context binder
+  threads: 1
+  requested threads: 0+0/0
+  ready threads 0
+  free async space 520192
+  nodes: 0
+  refs: 0 s 0 w 0
+  buffers: 0
+  pending transactions: 0
+  BC_TRANSACTION: 1
+  BC_ENTER_LOOPER: 1
+  BR_TRANSACTION_COMPLETE: 1
+
+============ binder_transactions  19-07-25 14:30:26  ==============
+binder transactions:
+proc 225
+context binder
+  node 7: u00000000803d6320 c00000000803d62fc pri 0:247 hs 1 hw 1 ls 0 lw 0 is 1 iw 1 tr 1 proc 209
+proc 209
+context binder
+  node 2: u0000000000000000 c0000000000000000 pri 0:120 hs 1 hw 1 ls 1 lw 1 is 1 iw 1 tr 1 proc 225
+
+============ binder_transaction_log  19-07-25 14:30:26  ==============
+1: call  from 208:208 to 0:0 context binder node 0 handle 0 size 0:0 ret 29189/-22 l=2997
+3: call  from 225:225 to 209:0 context binder node 2 handle 0 size 0:0 ret 0/0 l=0
+4: reply from 209:209 to 225:225 context binder node 0 handle 0 size 4:0 ret 0/0 l=0
+6: call  from 225:225 to 209:0 context binder node 2 handle 0 size 140:4 ret 0/0 l=0
+9: reply from 209:209 to 225:225 context binder node 0 handle 0 size 4:0 ret 0/0 l=0
+
+============ binder_failed_transaction_log  19-07-25 14:30:26  ==============
+1: call  from 208:208 to 0:0 context binder node 0 handle 0 size 0:0 ret 29189/-22 l=2997
+
+============ query_task_fd  19-07-25 14:30:26  ==============
+
+============ df  19-07-25 14:30:26  ==============
+Filesystem               Size     Used     Avail     Free   Blksize
+/dev                   213.7M   132.0K   213.6M   213.6M   4096
+/sys/fs/cgroup         213.7M    12.0K   213.7M   213.7M   4096
+/mnt/asec              213.7M     0.0K   213.7M   213.7M   4096
+/mnt/obb               213.7M     0.0K   213.7M   213.7M   4096
+/system                387.4M   305.8M    73.7M    81.7M   4096
+/data                    2.6G     4.4M     2.6G     2.6G   4096
+/cache                  94.4M    72.0K    92.4M    94.4M   4096
+/productinfo           928.0K   120.0K   708.0K   808.0K   4096
+/mnt/shell/emulated      2.6G     4.4M     2.6G     2.6G   4096
+
+============ ps  19-07-25 14:30:26  ==============
+USER     PID   PPID  VSIZE  RSS     WCHAN    PC         NAME
+root      1     0     680    540   00000001 0001a30c S /init
+root      2     0     0      0     00000001 00000000 S kthreadd
+root      3     2     0      0     00000001 00000000 S ksoftirqd/0
+root      4     2     0      0     00000001 00000000 S kworker/0:0
+root      5     2     0      0     00000001 00000000 S kworker/0:0H
+root      6     2     0      0     00000001 00000000 S kworker/u4:0
+root      7     2     0      0     00000001 00000000 S rcu_preempt
+root      8     2     0      0     00000001 00000000 S rcu_sched
+root      9     2     0      0     00000001 00000000 S rcu_bh
+root      10    2     0      0     00000001 00000000 S migration/0
+root      11    2     0      0     00000001 00000000 S watchdog/0
+root      12    2     0      0     00000001 00000000 S watchdog/1
+root      13    2     0      0     00000001 00000000 S migration/1
+root      14    2     0      0     00000001 00000000 S ksoftirqd/1
+root      15    2     0      0     00000001 00000000 S kworker/1:0
+root      16    2     0      0     00000001 00000000 S kworker/1:0H
+root      17    2     0      0     00000001 00000000 S kdevtmpfs
+root      18    2     0      0     00000001 00000000 S suspend_sys_syn
+root      19    2     0      0     00000001 00000000 S perf
+root      20    2     0      0     00000001 00000000 S irq/20-70500000
+root      21    2     0      0     00000001 00000000 S kworker/0:1
+root      22    2     0      0     00000001 00000000 S irq/21-70800000
+root      23    2     0      0     00000001 00000000 S irq/22-70900000
+root      24    2     0      0     00000001 00000000 S writeback
+root      25    2     0      0     00000001 00000000 S ksmd
+root      26    2     0      0     00000001 00000000 S crypto
+root      27    2     0      0     00000001 00000000 S bioset
+root      28    2     0      0     00000001 00000000 S kblockd
+root      29    2     0      0     00000001 00000000 S sprd_deep_print
+root      30    2     0      0     00000001 00000000 S spi5
+root      31    2     0      0     00000001 00000000 S system
+root      32    2     0      0     00000001 00000000 S carveout_fb
+root      33    2     0      0     00000001 00000000 D mbox-send-threa
+root      34    2     0      0     00000001 00000000 S devfreq_wq
+root      35    2     0      0     00000001 00000000 S cfg80211
+root      36    2     0      0     00000001 00000000 S irq/53-spi5.0
+root      37    2     0      0     00000001 00000000 S sprdfgu_monitor
+root      38    2     0      0     00000001 00000000 S cfinteractive
+root      39    2     0      0     00000001 00000000 S kswapd0
+root      40    2     0      0     00000001 00000000 S vmstat
+root      41    2     0      0     00000001 00000000 S fsnotify_mark
+root      72    2     0      0     00000001 00000000 S sprd-adf-dev
+root      73    2     0      0     00000001 00000000 S bioset
+root      74    2     0      0     00000001 00000000 S bioset
+root      75    2     0      0     00000001 00000000 S bioset
+root      76    2     0      0     00000001 00000000 S bioset
+root      77    2     0      0     00000001 00000000 S bioset
+root      78    2     0      0     00000001 00000000 S bioset
+root      79    2     0      0     00000001 00000000 S bioset
+root      80    2     0      0     00000001 00000000 S bioset
+root      81    2     0      0     00000001 00000000 S bioset
+root      82    2     0      0     00000001 00000000 S bioset
+root      83    2     0      0     00000001 00000000 S bioset
+root      84    2     0      0     00000001 00000000 S bioset
+root      85    2     0      0     00000001 00000000 S bioset
+root      86    2     0      0     00000001 00000000 S bioset
+root      87    2     0      0     00000001 00000000 S bioset
+root      88    2     0      0     00000001 00000000 S bioset
+root      89    2     0      0     00000001 00000000 S bioset
+root      90    2     0      0     00000001 00000000 S saudio
+root      91    2     0      0     00000001 00000000 S saudio-5-10
+root      92    2     0      0     00000001 00000000 S sblock-5-13
+root      93    2     0      0     00000001 00000000 S saudio
+root      94    2     0      0     00000001 00000000 S saudio-5-14
+root      95    2     0      0     00000001 00000000 S sblock-5-10
+root      96    2     0      0     00000001 00000000 S sblock-5-11
+root      97    2     0      0     00000001 00000000 S sblock-5-12
+root      98    2     0      0     00000001 00000000 S sblock-5-131
+root      99    2     0      0     00000001 00000000 S sblock-5-17
+root      100   2     0      0     00000001 00000000 S sblock-5-14
+root      101   2     0      0     00000001 00000000 S sblock-5-15
+root      102   2     0      0     00000001 00000000 S sblock-5-16
+root      103   2     0      0     00000001 00000000 S sblock-5-151
+root      104   2     0      0     00000001 00000000 S uether
+root      105   2     0      0     00000001 00000000 D kworker/0:2
+root      106   2     0      0     00000001 00000000 S esd_tmr_workque
+root      107   2     0      0     00000001 00000000 S irq/62-bt541_ts
+root      108   2     0      0     00000001 00000000 S raise oo
+root      109   2     0      0     00000001 00000000 S dm_bufio_cache
+root      110   2     0      0     00000001 00000000 S sprdhotplug
+root      111   2     0      0     00000001 00000000 S kworker/u4:1
+root      112   2     0      0     00000001 00000000 S kworker/1:1
+root      113   2     0      0     00000001 00000000 S krtccd
+root      114   2     0      0     00000001 00000000 S sbuf-6-5
+root      115   2     0      0     00000001 00000000 S sbuf-6-6
+root      116   2     0      0     00000001 00000000 S sbuf-5-4
+root      117   2     0      0     00000001 00000000 S sbuf-5-21
+root      118   2     0      0     00000001 00000000 S sbuf-5-6
+root      119   2     0      0     00000001 00000000 S sbuf-3-4
+root      120   2     0      0     00000001 00000000 S sbuf-4-4
+root      121   2     0      0     00000001 00000000 S sblock-5-5
+root      122   2     0      0     00000001 00000000 S swcnblk-3-7
+root      123   2     0      0     00000001 00000000 S swcnblk-3-8
+root      124   2     0      0     00000001 00000000 S swcnblk-3-9
+root      125   2     0      0     00000001 00000000 S binder
+root      126   2     0      0     00000001 00000000 S kworker/u4:2
+root      127   2     0      0     00000001 00000000 S ipv6_addrconf
+root      128   2     0      0     00000001 00000000 S sblock-5-2
+root      129   2     0      0     00000001 00000000 S imsbr-data[5-2]
+root      130   2     0      0     00000001 00000000 S sblock-5-3
+root      131   2     0      0     00000001 00000000 S imsbr-ctrl[5-3]
+root      140   2     0      0     00000001 00000000 S deferwq
+root      141   2     0      0     00000001 00000000 S sipx-5-7
+root      142   2     0      0     00000001 00000000 S sipx-5-8
+root      143   2     0      0     00000001 00000000 S sipx-5-9
+root      144   2     0      0     00000001 00000000 S sipx-5-18
+root      145   2     0      0     00000001 00000000 S sipx-5-19
+root      146   2     0      0     00000001 00000000 S sipx-5-20
+root      147   2     0      0     00000001 00000000 S sipx-5-24
+root      148   2     0      0     00000001 00000000 S sipx-5-25
+root      149   2     0      0     00000001 00000000 S sbuf-3-5
+root      150   2     0      0     00000001 00000000 S sbuf-3-11
+root      151   2     0      0     00000001 00000000 S sbuf-3-12
+root      152   2     0      0     00000001 00000000 S sprdbat_monitor
+root      153   2     0      0     00000001 00000000 S kworker/1:2
+root      154   2     0      0     00000001 00000000 S kworker/1:3
+root      155   2     0      0     00000001 00000000 S kworker/u4:3
+root      156   2     0      0     00000001 00000000 S headset_button
+root      157   2     0      0     00000001 00000000 S headset_detect_
+root      158   2     0      0     00000001 00000000 S headset_reg_dum
+root      159   1     544    4     00000001 0001a30c S /sbin/ueventd
+root      160   2     0      0     00000001 00000000 S bioset
+root      161   2     0      0     00000001 00000000 S mmcqd/0
+root      162   2     0      0     00000001 00000000 S bioset
+root      163   2     0      0     00000001 00000000 S mmcqd/0boot0
+root      164   2     0      0     00000001 00000000 S bioset
+root      165   2     0      0     00000001 00000000 S mmcqd/0boot1
+root      166   2     0      0     00000001 00000000 S bioset
+root      167   2     0      0     00000001 00000000 S mmcqd/0rpmb
+root      168   2     0      0     00000001 00000000 S f_mtp
+root      169   2     0      0     00000001 00000000 S VserTestWq
+root      171   2     0      0     00000001 00000000 S kworker/1:1H
+root      172   2     0      0     00000001 00000000 S jbd2/mmcblk0p27
+root      173   2     0      0     00000001 00000000 S ext4-rsv-conver
+root      176   2     0      0     00000001 00000000 S ext4lazyinit
+root      179   2     0      0     00000001 00000000 S jbd2/mmcblk0p31
+root      180   2     0      0     00000001 00000000 S ext4-rsv-conver
+root      184   2     0      0     00000001 00000000 S jbd2/mmcblk0p28
+root      185   2     0      0     00000001 00000000 S ext4-rsv-conver
+root      189   2     0      0     00000001 00000000 S jbd2/mmcblk0p1-
+root      190   2     0      0     00000001 00000000 S ext4-rsv-conver
+root      191   2     0      0     00000001 00000000 S gpu_dfs
+root      192   2     0      0     00000001 00000000 S kworker/u5:0
+root      193   2     0      0     00000001 00000000 S kbase_job_fault
+root      198   2     0      0     00000001 00000000 S kworker/u5:1
+root      199   2     0      0     00000001 00000000 S kworker/u5:2
+media_rw  201   1     3504   260   00000000 b6f22d8c S /system/bin/sdcard
+media_rw  203   201   3504   260   00000001 b6f221d0 S sdcard
+media_rw  204   201   3504   260   00000001 b6f221d0 S sdcard
+root      208   1     1436   4     00000001 00019dc8 S /sbin/healthd
+system    209   1     1008   208   00000001 b6ecb494 S /system/bin/servicemanager
+root      210   1     4700   824   00000000 b6ea0d8c S /system/bin/vold
+root      266   210   4700   824   00000001 b6ea05e0 S vold
+root      283   210   4700   824   00000001 b6ea05e0 S vold
+root      211   1     4004   260   00000000 b6f4ed0c S /system/bin/modemd
+root      231   211   4004   260   00000001 b6f4f188 S modemd
+root      232   211   4004   260   00000001 b6f4e1d0 S modemd
+root      234   211   4004   260   00000001 b6f4e5e0 S modemd
+system    212   1     5444   636   00000000 b6eb7d8c S /vendor/bin/connmgr
+system    291   212   5444   636   00000001 b6eb8810 S connmgr
+system    292   212   5444   636   00000001 b6eb71f0 D connmgr
+system    293   212   5444   636   00000001 b6eb7d8c S connmgr
+system    294   212   5444   636   00000001 b6eb7d8c S connmgr
+system    213   1     4092   376   00000000 b6eafd8c S /system/bin/modem_control
+system    258   213   4092   376   00000001 b6eb0810 S modem_control
+system    259   213   4092   376   00000001 b6eafd8c S modem_control
+system    274   213   4092   376   00000001 b6eaf1f0 D modem_control
+system    214   1     2928   204   00000000 b6fa1d8c S /vendor/bin/gpsd
+system    229   214   2928   204   00000001 b6fa15e0 S gpsd
+system    230   214   2928   204   00000001 b6fa15e0 S gpsd
+root      215   1     1968   276   00000000 b6f2b810 S /system/bin/modemDriver_vpad_main
+root      226   215   1968   276   00000001 b6f2ad8c S modemDriver_vpa
+root      216   1     2344   1384  00000000 b6f246cc R /system/bin/netd
+root      217   1     1132   424   00000001 b6eaf188 S /system/bin/debuggerd
+root      218   1     1384   728   00000001 b6f7dd8c S /system/bin/rild
+root      219   1     3368   344   00000000 7f65bd04 S /system/bin/slog
+root      261   219   3368   344   00000001 7f64f97c S slog
+root      276   219   3368   344   00000001 7f65be48 S slog
+system    220   1     11436  2300  00000000 b6f82114 D /system/bin/surfaceflinger
+system    284   220   11436  2300  00000001 b6f68494 S Binder_1
+system    285   220   11436  2300  00000001 b6f69810 S DispSync
+system    290   220   11436  2300  00000001 b6f68494 S Binder_2
+root      221   1     6180   2016  00000001 b6fd146a D /system/bin/app_process
+drm       222   1     4944   3008  00000001 b6eed1b8 D /system/bin/drmserver
+media     223   1     5204   2624  00000001 b6f45a10 D /system/bin/mediaserver
+install   224   1     1004   344   00000001 b6f57188 S /system/bin/installd
+keystore  225   1     3356   1372  00000001 b6f45494 S /system/bin/keystore
+root      227   1     960    292   00000001 b6ed6188 S /system/bin/ext_data
+system    228   1     1148   492   00000001 b6ed9d8c S /system/bin/refnotify
+shell     233   1     2296   844   00000000 b6ef06cc S /system/bin/slogmodem
+shell     260   233   2296   844   00000001 b6ef0810 S slogmodem
+system    235   1     936    276   00000001 b6fa1188 S /system/bin/systemDebuggerd
+root      236   1     1064   404   00000001 b6ec9cf8 S /system/xbin/srtd
+system    237   1     5872   1128  00000000 b6f27810 S /system/bin/thermald
+system    277   237   5872   1128  00000001 b6f26d8c S thermald
+system    278   237   5872   1128  00000001 b6f27188 S thermald
+system    279   237   5872   1128  00000001 b6f276cc S thermald
+root      238   1     916    300   00000001 b6f03228 S /system/bin/ju_ipsec_server
+root      239   1     1040   420   00000001 b6f35cf8 S /system/bin/ims_bridged
+root      240   1     936    152   00000001 b6f6b018 S /system/bin/sh
+shell     241   1     944    684   00000001 b6fae1d0 S /system/bin/sh
+system    242   1     896    220   00000001 b6fa54b4 S /system/bin/sprdstorageproxyd
+system    243   1     896    216   00000001 b6f634b4 S /system/bin/sprdstorageproxyd
+root      244   1     2416   528   00000001 b6f08d8c S /system/bin/collect_apr
+root      249   236   1064   124   00000001 b6ecad8c S /system/xbin/srtd
+root      250   240   936    108   00000001 b6f6b018 S /system/bin/sh
+root      251   240   1064   304   00000001 b6ec02e4 S ip
+root      252   240   936    108   00000001 b6f6a1d0 S /system/bin/sh
+root      255   250   1060   304   00000001 b6f5d2e4 S ip
+root      256   250   940    112   00000001 b6f6a1d0 S /system/bin/sh
+root      268   239   1408   224   00000001 b6f0ed8c S iptables
+root      270   2     0      0     00000001 00000000 S kworker/0:1H
+root      295   219   928    152   00000001 b6f1a018 S sh
+root      297   295   1260   408   00000000 b6f041d0 R ps
+
+============ slog_conf  19-07-25 14:30:26  ==============
+#control: enable/disable
+enable
+
+#type	name		value
+var	logpath		external
+var	screenshot	enable
+var	slogsaveall	off
+var	sysdump		on
+var	coredump	on
+var	hprofs		on
+var	sprd_debug	on
+var	kmemleak	off
+
+#type	name	state	size	level
+stream	kernel	on	0	7
+stream	main	on	0	5
+stream	events	on	0	0
+stream	system	on	0	8
+stream	radio	on	0	0
+stream	cp0	off	0	5
+stream	cp1	off	0	5
+stream	cp2	off	0	5
+stream	cp_wcdma	off	0	5
+stream	cp_td-scdma	off	0	5
+stream	cp_wcn		off	0	5
+stream	cp_td-lte	off	0	5
+stream	cp_tdd-lte	off	0	5
+stream	cp_fdd-lte	off	0	5
+stream	bt	off	0	7
+stream	tcp	off	0	7
+stream	kmemleak	off	0	7
+misc	misc	on	0	5
+
+#type	name		opt	level	inter	action
+snap	meminfo		file	6	300	/proc/meminfo
+snap	slab		file	6	300	/proc/slabinfo
+snap	buddy		file	6	300	/proc/buddyinfo
+snap	slog_conf	file	6	300	/data/local/tmp/slog/slog.conf
+snap	cpu_usage	file	9	300	/sys/kernel/debug/sprd_debug/cpu/cpu_usage
+snap	traces		file	7	0	/data/anr/traces.txt
+snap	last_kmsg	file	7	0	/sys/fs/pstore/console-ramoops
+snap	cmdline		file	7	0	/proc/cmdline
+snap	ps		cmd	6	300	ps -t
+snap	df		cmd	6	300	df
+snap	procrank	cmd	9	300	procrank
+snap	bugreport	cmd	9	0	bugreport
+snap	getprop		cmd	9	0	getprop
+snap	dumpsys		cmd	9	0	dumpsys
+snap	query_task_fd	cmd	6	0	query_task_fd
+
+#binder_info
+snap	binder_failed_transaction_log	file	6	300	/sys/kernel/debug/binder/failed_transaction_log
+snap	binder_transaction_log	file	6	300	/sys/kernel/debug/binder/transaction_log
+snap	binder_transactions	file	6	300	/sys/kernel/debug/binder/transactions
+snap	binder_stats	file	6	300	/sys/kernel/debug/binder/stats
+snap	binder_state	file	6	300	/sys/kernel/debug/binder/state
+#binder end
+
+#type	name		level	file
+notify	anr		1	/data/anr
+notify	tombstones	1	/data/tombstones
+
+============ buddy  19-07-25 14:30:26  ==============
+Node 0, zone   Normal     17     14     10      8      5      1      4      3      3      4     90 
+
+============ slab  19-07-25 14:30:26  ==============
+slabinfo - version: 2.1
+# name            <active_objs> <num_objs> <objsize> <objperslab> <pagesperslab> : tunables <limit> <batchcount> <sharedfactor> : slabdata <active_slabs> <num_slabs> <sharedavail>
+zs_handle            512    512      8  512    1 : tunables    0    0    0 : slabdata      1      1      0
+ext4_groupinfo_4k     36     36    112   36    1 : tunables    0    0    0 : slabdata      1      1      0
+RAWv6                 38     38    832   19    4 : tunables    0    0    0 : slabdata      2      2      0
+UDPLITEv6              0      0    832   19    4 : tunables    0    0    0 : slabdata      0      0      0
+UDPv6                  0      0    832   19    4 : tunables    0    0    0 : slabdata      0      0      0
+tw_sock_TCPv6          0      0    192   21    1 : tunables    0    0    0 : slabdata      0      0      0
+request_sock_TCPv6      0      0    240   17    1 : tunables    0    0    0 : slabdata      0      0      0
+TCPv6                  0      0   1600   20    8 : tunables    0    0    0 : slabdata      0      0      0
+nf_conntrack_1         0      0    232   17    1 : tunables    0    0    0 : slabdata      0      0      0
+nf_conntrack_expect      0      0    160   25    1 : tunables    0    0    0 : slabdata      0      0      0
+ashmem_area_cache      0      0    288   14    1 : tunables    0    0    0 : slabdata      0      0      0
+kcopyd_job             0      0   2808   11    8 : tunables    0    0    0 : slabdata      0      0      0
+dm_uevent              0      0   2472   13    8 : tunables    0    0    0 : slabdata      0      0      0
+dm_rq_target_io        0      0     72   56    1 : tunables    0    0    0 : slabdata      0      0      0
+discard_entry          0      0     80   51    1 : tunables    0    0    0 : slabdata      0      0      0
+f2fs_inode_cache       0      0    632   25    4 : tunables    0    0    0 : slabdata      0      0      0
+fuse_request          26     26    296   13    1 : tunables    0    0    0 : slabdata      2      2      0
+fuse_inode            18     18    448   18    2 : tunables    0    0    0 : slabdata      1      1      0
+sdcardfs_inode_data_cache      0      0     24  170    1 : tunables    0    0    0 : slabdata      0      0      0
+sdcardfs_inode_cache      0      0    360   22    2 : tunables    0    0    0 : slabdata      0      0      0
+exfat_inode_cache      0      0    464   17    2 : tunables    0    0    0 : slabdata      0      0      0
+fat_inode_cache        0      0    440   18    2 : tunables    0    0    0 : slabdata      0      0      0
+fat_cache              0      0     24  170    1 : tunables    0    0    0 : slabdata      0      0      0
+jbd2_transaction_s     21     21    192   21    1 : tunables    0    0    0 : slabdata      1      1      0
+jbd2_journal_head    192    192     64   64    1 : tunables    0    0    0 : slabdata      3      3      0
+jbd2_revoke_table_s    256    256     16  256    1 : tunables    0    0    0 : slabdata      1      1      0
+ext4_inode_cache     264    264    664   12    2 : tunables    0    0    0 : slabdata     22     22      0
+ext4_allocation_context     78     78    104   39    1 : tunables    0    0    0 : slabdata      2      2      0
+ext4_prealloc_space      0      0     72   56    1 : tunables    0    0    0 : slabdata      0      0      0
+ext4_extent_status    384    384     32  128    1 : tunables    0    0    0 : slabdata      3      3      0
+mbcache              102    102     40  102    1 : tunables    0    0    0 : slabdata      1      1      0
+posix_timers_cache     52     52    152   26    1 : tunables    0    0    0 : slabdata      2      2      0
+UDP-Lite               0      0    704   23    4 : tunables    0    0    0 : slabdata      0      0      0
+flow_cache             0      0    112   36    1 : tunables    0    0    0 : slabdata      0      0      0
+RAW                   69     69    704   23    4 : tunables    0    0    0 : slabdata      3      3      0
+UDP                   46     46    704   23    4 : tunables    0    0    0 : slabdata      2      2      0
+tw_sock_TCP            0      0    192   21    1 : tunables    0    0    0 : slabdata      0      0      0
+request_sock_TCP       0      0    240   17    1 : tunables    0    0    0 : slabdata      0      0      0
+TCP                    0      0   1472   22    8 : tunables    0    0    0 : slabdata      0      0      0
+eventpoll_pwq        102    102     40  102    1 : tunables    0    0    0 : slabdata      1      1      0
+sgpool-128            12     12   2560   12    8 : tunables    0    0    0 : slabdata      1      1      0
+sgpool-64             12     12   1280   12    4 : tunables    0    0    0 : slabdata      1      1      0
+sgpool-32             12     12    640   12    2 : tunables    0    0    0 : slabdata      1      1      0
+sgpool-16             12     12    320   12    1 : tunables    0    0    0 : slabdata      1      1      0
+blkdev_queue          28     28   1104   14    4 : tunables    0    0    0 : slabdata      2      2      0
+blkdev_requests       72     72    224   18    1 : tunables    0    0    0 : slabdata      4      4      0
+biovec-256            50     50   3072   10    8 : tunables    0    0    0 : slabdata      5      5      0
+biovec-128             0      0   1536   21    8 : tunables    0    0    0 : slabdata      0      0      0
+biovec-64             42     42    768   21    4 : tunables    0    0    0 : slabdata      2      2      0
+sock_inode_cache      84     84    384   21    2 : tunables    0    0    0 : slabdata      4      4      0
+skbuff_fclone_cache      0      0    384   21    2 : tunables    0    0    0 : slabdata      0      0      0
+shmem_inode_cache    609    609    384   21    2 : tunables    0    0    0 : slabdata     29     29      0
+proc_inode_cache    1176   1176    376   21    2 : tunables    0    0    0 : slabdata     56     56      0
+sigqueue              56     56    144   28    1 : tunables    0    0    0 : slabdata      2      2      0
+bdev_cache            48     48    512   16    2 : tunables    0    0    0 : slabdata      3      3      0
+kernfs_node_cache  21063  21063     80   51    1 : tunables    0    0    0 : slabdata    413    413      0
+inode_cache         5520   5520    344   23    2 : tunables    0    0    0 : slabdata    240    240      0
+dentry              7770   7770    136   30    1 : tunables    0    0    0 : slabdata    259    259      0
+iint_cache             0      0     48   85    1 : tunables    0    0    0 : slabdata      0      0      0
+avc_node             219    219     56   73    1 : tunables    0    0    0 : slabdata      3      3      0
+selinux_file_security   1024   1024     16  256    1 : tunables    0    0    0 : slabdata      4      4      0
+selinux_inode_security   7735   7735     48   85    1 : tunables    0    0    0 : slabdata     91     91      0
+buffer_head         2048   2048     64   64    1 : tunables    0    0    0 : slabdata     32     32      0
+nsproxy              340    340     24  170    1 : tunables    0    0    0 : slabdata      2      2      0
+vm_area_struct      2162   2162     88   46    1 : tunables    0    0    0 : slabdata     47     47      0
+mm_struct             72     72    448   18    2 : tunables    0    0    0 : slabdata      4      4      0
+signal_cache         224    224    576   14    2 : tunables    0    0    0 : slabdata     16     16      0
+sighand_cache        204    204   1344   12    4 : tunables    0    0    0 : slabdata     17     17      0
+task_struct          247    247   1664   19    8 : tunables    0    0    0 : slabdata     13     13      0
+anon_vma_chain      1664   1664     32  128    1 : tunables    0    0    0 : slabdata     13     13      0
+anon_vma             935    935     48   85    1 : tunables    0    0    0 : slabdata     11     11      0
+radix_tree_node      377    377    312   13    1 : tunables    0    0    0 : slabdata     29     29      0
+idr_layer_cache      240    240   1072   15    4 : tunables    0    0    0 : slabdata     16     16      0
+kmalloc-8192          16     16   8192    4    8 : tunables    0    0    0 : slabdata      4      4      0
+kmalloc-4096          72     72   4096    8    8 : tunables    0    0    0 : slabdata      9      9      0
+kmalloc-2048         128    128   2048   16    8 : tunables    0    0    0 : slabdata      8      8      0
+kmalloc-1024         288    288   1024   16    4 : tunables    0    0    0 : slabdata     18     18      0
+kmalloc-512          912    912    512   16    2 : tunables    0    0    0 : slabdata     57     57      0
+kmalloc-256          400    400    256   16    1 : tunables    0    0    0 : slabdata     25     25      0
+kmalloc-192         1760   1890    192   21    1 : tunables    0    0    0 : slabdata     90     90      0
+kmalloc-128         3328   3328    128   32    1 : tunables    0    0    0 : slabdata    104    104      0
+kmalloc-64         19264  19264     64   64    1 : tunables    0    0    0 : slabdata    301    301      0
+kmem_cache_node      192    192     64   64    1 : tunables    0    0    0 : slabdata      3      3      0
+kmem_cache           128    128    128   32    1 : tunables    0    0    0 : slabdata      4      4      0

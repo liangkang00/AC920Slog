@@ -1,0 +1,3 @@
+
+============ cmdline  19-07-25 14:40:04  ==============
+earlycon=sprd_serial,0x70100000,115200n8 console=ttyS1,115200n8 loglevel=1 init=/init root=/dev/ram0 rw androidboot.hardware=sp9820e_1h10 lcd_id=ID1800 lcd_base=8fc1f000 lcd_size=360x320   sysdump_magic=85500000 modem=shutdown ltemode=lcsfb rfboard.id=-1 rfhw.id=1 crystal=3 32k.less=0  androidboot.verifiedbootstate=green androidboot.flash.locked=1  androidboot.serialno=P19006700034
